@@ -6,7 +6,7 @@ import (
 	"github.com/niclic/golang-book/pkg/chapter1"
 )
 
-func main () {
+func main() {
 	fmt.Println("This is the main golang-book command.")
 
 	chapter1.Hello()
