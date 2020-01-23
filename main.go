@@ -6,6 +6,7 @@ import (
 	"github.com/niclic/golang-book/pkg/chapter1"
 	"github.com/niclic/golang-book/pkg/chapter3"
 	"github.com/niclic/golang-book/pkg/chapter4"
+	"github.com/niclic/golang-book/pkg/chapter5"
 )
 
 func main() {
@@ -18,4 +19,8 @@ func main() {
 
 	chapter4.FahrenheitToCelsius()
 	chapter4.FeetToMeters()
+
+	chapter5.DivisibleByThree()
+	chapter5.FizzBuzz()
+	chapter5.FizzBuzzRedux()
 }
