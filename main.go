@@ -13,17 +13,27 @@ import (
 func main() {
 	fmt.Println("This is the main golang-book command.")
 
+	fmt.Println("Chapter 1:")
+
 	chapter1.Hello()
+
+	fmt.Println("Chapter 3:")
 
 	fmt.Println(chapter3.Add(2, 3))
 	fmt.Println(chapter3.Multiply(32132, 42452))
 
+	fmt.Println("Chapter 3:")
+
 	chapter4.FahrenheitToCelsius()
 	chapter4.FeetToMeters()
+
+	fmt.Println("Chapter 5:")
 
 	chapter5.DivisibleByThree()
 	chapter5.FizzBuzz()
 	chapter5.FizzBuzzRedux()
+
+	fmt.Println("Chapter 6:")
 
 	nums := []int{
 		48, 96, 86, 68,
