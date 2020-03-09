@@ -45,6 +45,15 @@ func ch5() {
 func ch6() {
 	fmt.Println("Chapter 6:")
 
+	sl := make([]int, 3, 9)
+	fmt.Println(len(sl))
+
+	fmt.Println()
+
+	x := [6]string{"a", "b", "c", "d", "e", "f"}
+	fmt.Println(x[2:5])
+	fmt.Println()
+
 	nums := []int{
 		48, 96, 86, 68,
 		57, 82, 63, 70,
