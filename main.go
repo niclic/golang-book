@@ -71,6 +71,9 @@ func ch7() {
 	nums := []int{45, 11, 100, 5, 786, 33, 1, 4}
 	average := chapter7.Average(nums...)
 	fmt.Printf("The average of %v is %d\n", nums, average)
+
+	sum := chapter7.Sum(nums...)
+	fmt.Printf("The sum of %v is %d\n", nums, sum)
 }
 
 func main() {
