@@ -9,6 +9,7 @@ import (
 	"github.com/niclic/golang-book/pkg/chapter4"
 	"github.com/niclic/golang-book/pkg/chapter5"
 	"github.com/niclic/golang-book/pkg/chapter6"
+	"github.com/niclic/golang-book/pkg/chapter7"
 )
 
 func ch1() {
@@ -61,7 +62,15 @@ func ch6() {
 		19, 97, 9, 17,
 	}
 	smallest := chapter6.FindSmallest(nums)
-	fmt.Println("The smallest number in %v is %d.", nums, smallest)
+	fmt.Printf("The smallest number in %v is %d.\n", nums, smallest)
+}
+
+func ch7() {
+	fmt.Println("Chapter 7:")
+
+	nums := []int{45, 11, 100, 5, 786, 33, 1, 4}
+	average := chapter7.Average(nums...)
+	fmt.Printf("The average of %v is %d\n", nums, average)
 }
 
 func main() {
@@ -85,6 +94,8 @@ func main() {
 		ch5()
 	case 6:
 		ch6()
+	case 7:
+		ch7()
 	default:
 		fmt.Println("Please enter a Chapter number.")
 	}
