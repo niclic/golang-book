@@ -74,6 +74,9 @@ func ch7() {
 
 	sum := chapter7.Sum(nums...)
 	fmt.Printf("The sum of %v is %d\n", nums, sum)
+
+	half, parity := chapter7.Half(100)
+	fmt.Printf("Half of %d (%s) is %d\n", 100, parity, half)
 }
 
 func main() {
