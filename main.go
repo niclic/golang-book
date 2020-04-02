@@ -77,6 +77,9 @@ func ch7() {
 
 	half, parity := chapter7.Half(100)
 	fmt.Printf("Half of %d (%s) is %d\n", 100, parity, half)
+
+	greatest := chapter7.FindGreatest(nums...)
+	fmt.Printf("The greatest num is %d\n", greatest)
 }
 
 func main() {

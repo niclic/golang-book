@@ -4,6 +4,15 @@ import (
 	"testing"
 )
 
+func TestFindGreatest(t *testing.T) {
+	nums := []int{1, 24, 12, 66, 4, 198, 44, 3}
+	expected := 198
+	actual := FindGreatest(nums...)
+	if actual != expected {
+		t.Errorf("Expected %d to be the greatest, but it was %d", expected, actual)
+	}
+}
+
 func TestHalf(t *testing.T) {
 	cases := []struct {
 		num    int

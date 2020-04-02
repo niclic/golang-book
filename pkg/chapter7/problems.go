@@ -1,5 +1,15 @@
 package chapter7
 
+func FindGreatest(nums ...int) int {
+	g := 0
+	for _, i := range nums {
+		if i > g {
+			g = i
+		}
+	}
+	return g
+}
+
 // Half returns half the provided integer and also 'true' if that integer is even, otherwise 'false'.
 func Half(i int) (int, string) {
 	p := "false"
