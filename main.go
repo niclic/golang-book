@@ -80,6 +80,13 @@ func ch7() {
 
 	greatest := chapter7.FindGreatest(nums...)
 	fmt.Printf("The greatest num is %d\n", greatest)
+
+	fmt.Println("Here are some odd numbers:\n")
+	nextOdd := chapter7.MakeOddGenerator()
+	fmt.Println(nextOdd()) // 1
+	fmt.Println(nextOdd()) // 3
+	fmt.Println(nextOdd()) // 5
+	fmt.Println()
 }
 
 func main() {

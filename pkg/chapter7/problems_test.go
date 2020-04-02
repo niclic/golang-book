@@ -1,8 +1,24 @@
 package chapter7
 
 import (
+	"fmt"
+	"reflect"
 	"testing"
 )
+
+func TestMakeOddGenerator(t *testing.T) {
+	makeOdd := MakeOddGenerator()
+	length := 5
+	var nums = make([]uint, length)
+	for i := 0; i < length; i++ {
+		nums = append(nums, makeOdd())
+	}
+
+	expected := []uint{1, 3, 5, 7, 9}
+	if reflect.DeepEqual(nums, expected) {
+		fmt.Printf("makeOddGenerator is not working. Expected %d, got %d", length, len(nums))
+	}
+}
 
 func TestFindGreatest(t *testing.T) {
 	nums := []int{1, 24, 12, 66, 4, 198, 44, 3}

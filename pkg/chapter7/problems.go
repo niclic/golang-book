@@ -1,5 +1,20 @@
 package chapter7
 
+// MakeOddGenerator is a generator that returns the next odd number each time it is called.
+func MakeOddGenerator() func() uint {
+	i := uint(1)
+	return func() (ret uint) {
+		ret = i // this is an odd generator, so start at 1, not zero (even)
+		i++     // increment by 1
+
+		if i%2 == 0 {
+			i++ // if i is even, increment by 1 again
+		}
+		return
+	}
+}
+
+// FindGreatest finds the greatest integer in a list of integers.
 func FindGreatest(nums ...int) int {
 	g := 0
 	for _, i := range nums {
