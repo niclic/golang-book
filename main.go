@@ -87,6 +87,9 @@ func ch7() {
 	fmt.Println(nextOdd()) // 3
 	fmt.Println(nextOdd()) // 5
 	fmt.Println()
+
+	num := chapter7.Fib(10)
+	fmt.Printf("The Fibonacci number for 10 is %d.\n", num)
 }
 
 func main() {

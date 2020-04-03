@@ -6,6 +6,33 @@ import (
 	"testing"
 )
 
+func TestFibonacci(t *testing.T) {
+	cases := []struct {
+		seq int
+		num int
+	}{
+		{0, 0},
+		{1, 1},
+		{2, 1},
+		{3, 2},
+		{4, 3},
+		{5, 5},
+		{6, 8},
+		{7, 13},
+		{8, 21},
+		{9, 34},
+		{10, 55},
+		{33, 3524578},
+	}
+
+	for _, c := range cases {
+		num := Fib(c.seq)
+		if num != c.num {
+			t.Errorf("Fibonacci number %d: expected %d, but got %d instead.", c.seq, c.num, num)
+		}
+	}
+}
+
 func TestMakeOddGenerator(t *testing.T) {
 	makeOdd := MakeOddGenerator()
 	length := 5

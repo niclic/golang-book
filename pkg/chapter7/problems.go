@@ -1,5 +1,16 @@
 package chapter7
 
+// Fib returns the Fibonnaci number for a given integer.
+func Fib(i int) int {
+	if i == 0 {
+		return i
+	}
+	if i == 1 {
+		return i
+	}
+	return Fib(i-1) + Fib(i-2)
+}
+
 // MakeOddGenerator is a generator that returns the next odd number each time it is called.
 func MakeOddGenerator() func() uint {
 	i := uint(1)
