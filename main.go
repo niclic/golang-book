@@ -10,6 +10,7 @@ import (
 	"github.com/niclic/golang-book/pkg/chapter5"
 	"github.com/niclic/golang-book/pkg/chapter6"
 	"github.com/niclic/golang-book/pkg/chapter7"
+	"github.com/niclic/golang-book/pkg/chapter8"
 )
 
 func ch1() {
@@ -92,6 +93,20 @@ func ch7() {
 	fmt.Printf("The Fibonacci number for 10 is %d.\n", num)
 }
 
+func ch8() {
+	fmt.Println("Chapter 8:")
+
+	d := 4.5
+	chapter8.Square(&d)
+	fmt.Printf("The square of 4.5 is %f.\n", d)
+
+	x := 5
+	y := 89
+	fmt.Printf("The values of x and y. x = %d, y = %d.\n", x, y)
+	chapter8.Swap(&x, &y)
+	fmt.Printf("The values of x and y have been swapped. x = %d, y = %d.\n", x, y)
+}
+
 func main() {
 	fmt.Println("This is the main golang-book command.")
 	fmt.Println("Enter a chapter number to run those exercises: e.g. golang-book -ch=1")
@@ -115,6 +130,8 @@ func main() {
 		ch6()
 	case 7:
 		ch7()
+	case 8:
+		ch8()
 	default:
 		fmt.Println("Please enter a Chapter number.")
 	}
